@@ -1,0 +1,126 @@
+# RB BrewBook - Cursor Project Playbook
+
+## Project Purpose
+You are contributing to **RB BrewBook**, a modern homebrewing management platform.
+Your goal is to help implement the MVP safely, incrementally, and with high code quality.
+
+---
+
+# Technology Stack
+
+- Next.js 15
+- App Router
+- TypeScript (strict)
+- Tailwind CSS
+- shadcn/ui
+- Supabase
+- PostgreSQL
+- Google OAuth (Supabase Auth)
+- Vercel
+- npm
+
+---
+
+# Architecture Rules
+
+- Prefer Server Components.
+- Use Client Components only when required.
+- Keep business logic outside UI components.
+- Create reusable components.
+- Keep files small and cohesive.
+- Follow Next.js App Router conventions.
+
+---
+
+# Folder Rules
+
+Never modify these folders unless explicitly requested:
+
+- docs/
+- project-definition/
+- scripts/
+
+Use:
+
+- src/app
+- src/components
+- src/lib
+- src/hooks
+- src/types
+
+---
+
+# Coding Standards
+
+- TypeScript only.
+- Avoid `any`.
+- Prefer async/await.
+- Keep functions focused.
+- Write readable code before clever code.
+- Do not add unnecessary dependencies.
+
+---
+
+# Authentication
+
+Authentication is handled exclusively through Supabase Auth with Google OAuth.
+
+Do not:
+- Implement custom authentication.
+- Store Google credentials.
+- Store passwords.
+
+---
+
+# Environment Variables
+
+Use only:
+
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+Never hardcode secrets.
+
+---
+
+# Git Rules
+
+- Never initialize Git.
+- Never modify Git history.
+- Never commit secrets.
+- Do not create commits automatically.
+
+---
+
+# How to Work
+
+Before making changes:
+
+1. Explain your implementation plan.
+2. Wait for approval when changes are significant.
+3. Modify only the files required.
+4. Keep the solution simple.
+
+---
+
+# Out of Scope
+
+Until requested, do NOT:
+
+- Implement features outside the current User Story.
+- Add analytics.
+- Add testing frameworks.
+- Add Docker.
+- Add CI/CD.
+- Add state management libraries.
+
+---
+
+# Success Criteria
+
+Every change should be:
+
+- Small
+- Reviewable
+- Maintainable
+- Compatible with the existing architecture

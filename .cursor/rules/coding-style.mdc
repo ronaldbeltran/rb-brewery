@@ -1,0 +1,108 @@
+# RB BrewBook - Coding Style Guide
+
+## General Principles
+
+- Prefer clarity over cleverness.
+- Keep implementations simple.
+- Every file should have a single responsibility.
+- Remove dead code instead of commenting it out.
+
+---
+
+## TypeScript
+
+- Enable strict typing.
+- Never use `any` unless explicitly justified.
+- Prefer interfaces for domain models.
+- Export shared types from `src/types`.
+
+---
+
+## Folder Structure
+
+src/
+  app/
+  components/
+    ui/
+    layout/
+    features/
+  lib/
+  hooks/
+  services/
+  types/
+
+---
+
+## React
+
+- Use functional components.
+- Prefer Server Components.
+- Add `"use client"` only when required.
+- Keep components focused and reusable.
+
+---
+
+## Naming Conventions
+
+Files:
+- kebab-case.ts
+- kebab-case.tsx
+
+Components:
+- PascalCase
+
+Variables:
+- camelCase
+
+Constants:
+- UPPER_SNAKE_CASE
+
+Interfaces:
+- Prefix with `I` only if already established; otherwise use descriptive names.
+
+---
+
+## Error Handling
+
+- Handle expected errors gracefully.
+- Return meaningful messages.
+- Do not expose internal implementation details.
+
+---
+
+## Imports
+
+1. External libraries
+2. Internal aliases
+3. Relative imports
+
+Remove unused imports before finishing a task.
+
+---
+
+## Styling
+
+- Tailwind CSS only.
+- Reuse shadcn/ui components whenever possible.
+- Avoid inline styles.
+
+---
+
+## Git
+
+- Make small, focused changes.
+- Do not modify unrelated files.
+- Never create commits automatically.
+
+---
+
+## AI Collaboration
+
+For every request:
+
+1. Read `project.mdc`.
+2. Read `current-sprint.mdc`.
+3. Follow this style guide.
+4. Explain the implementation plan.
+5. Implement only the requested scope.
+6. Stop when the task is complete; do not continue with additional features.

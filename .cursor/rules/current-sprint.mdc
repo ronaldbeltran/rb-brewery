@@ -1,0 +1,66 @@
+# RB BrewBook - Current Sprint Context
+
+## Sprint
+Sprint 0 - Project Bootstrap
+
+## Objective
+Establish the technical foundation of the application. No business features should be implemented beyond authentication and project setup.
+
+## In Scope
+
+### Infrastructure
+- Create the Next.js 15 application
+- Configure App Router
+- Configure TypeScript
+- Configure Tailwind CSS
+- Install and configure shadcn/ui
+- Configure Supabase client
+- Prepare Vercel deployment
+- Configure environment variables
+
+### Authentication (UC-001)
+- HU-001.1 Login with Google
+- HU-001.2 Create user automatically
+- HU-001.3 Create default workspace
+- HU-001.4 Keep session active
+- HU-001.5 Handle authentication errors
+- HU-001.6 Never store Google credentials
+- HU-001.7 Redirect authenticated users to Dashboard
+
+### Logout (UC-002)
+- HU-002.1 Logout
+- HU-002.2 Invalidate active session
+- HU-002.3 Clear local session data
+- HU-002.4 Redirect to Login
+
+## Out of Scope
+
+Do NOT implement:
+- Recipe management
+- Brewing logs
+- Inventory
+- Fermentation tracking
+- Notifications
+- Reports
+- Multi-user collaboration
+- Payments
+- Mobile application
+
+## Definition of Done
+
+A task is complete only if:
+- The project builds successfully.
+- TypeScript has no errors.
+- ESLint passes.
+- No secrets are committed.
+- Existing architecture is respected.
+- Changes are limited to the requested scope.
+
+## Working Agreement
+
+For every request:
+1. Read project.mdc first.
+2. Explain the implementation plan.
+3. Keep changes as small as possible.
+4. Do not refactor unrelated code.
+5. Wait for approval before major structural changes.
